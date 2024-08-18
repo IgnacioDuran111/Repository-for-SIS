@@ -18,6 +18,6 @@ int main(){
     cin>>height;
     //Calcular el area del triángulo
     Area=(base*height)/2;
-    cout<<"THE TRIANGLE'S AREA IS: "<<Area;
+    cout<<"THE TRIANGLE'S AREA IS: "<<Area<<"m^2";
     return 0;
 }
