@@ -22,7 +22,7 @@ int main(){
             }
         }   
         //Si sale del Bucle sin encontrar divisores entonces j será igual a number
-        //Si encuentra algún divisor j será number+1 
+        //Si encuentra algún divisor j será numbc85d594er+1 
         if(j==number){
             //number es primo, se lo muestra en pantalla y se cuenta que se encotró un primo más
             cout<<number<<endl;
