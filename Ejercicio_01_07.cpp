@@ -14,6 +14,7 @@ int main(){
     cout<<"THIS PROGRAM SHOWS THE MONTHS OF THE YEAR"<<endl;
     cout<<"PLEASE ENTER A NUMBER"<<endl;
     cin>>month;
+    //Se usa switch para las multiples opciones del mes
     switch (month){
     case 1:
         cout<<"JANUARY"<<endl;
