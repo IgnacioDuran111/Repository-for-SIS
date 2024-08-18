@@ -10,6 +10,7 @@ Problema planteado: Crea un programa para calcular el área de un triángulo.
 #include<iostream>
 using namespace std;
 int main(){
+    system("cls");
     float base, height, Area;
     cout<<"THIS PROGRAM CALCULATE THE TRIANGLE'S AREA"<<endl;
     cout<<"PLEASE, ENTER BASE"<<endl;
