@@ -13,8 +13,11 @@ int main(){
     cout<<"THIS PROGRAM INVERT A NUMBER"<<endl;
     cin>>number;
     while(number>0){
+        //CALCULAMOS EL RESIDUO DEL NUMERO
         rest=number%10;
+        //lO PONEMOS AL NUMERO A INVERTIR
         invert=invert*10+rest;
+        //DIVIDIMOS AL NUMERO ENTRE 10 Y REPETIMOS
         number/=10;
     }
     cout<<"THE INVERT NUMBER IS "<<invert<<endl;
