@@ -12,7 +12,7 @@ int main(){
     //i es una variable para el bucle for, se la define como global por que se la usa fuera del bucle
     int number,i;
     cout<<"THIS PROGRAM DEFINE IF A NUMBER IS PRIME"<<endl;
-    cout<<"PLEASE, ENTER NUMBER"<<endl;
+    cout<<"PLEASE, ENTER A NUMBER"<<endl;
     cin>>number;
     /*Se tiene en cuenta los siguientes aspectos
     1. Si el número ingresado n es divisible por un número primo k distinto de 1 y n, entonces:
