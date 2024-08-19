@@ -16,15 +16,26 @@ int main(){
     aux2=num1-1;
     keep_num=num1;
     result=num1;
-    while(num1-aux>1){
-        while(aux2>1){
-            result+=keep_num;
-            aux2--;
-        }
-        keep_num=result;
-        aux++;
-        aux2=num1-1-aux;
+    if (num1==0){
+        //EL FACTORIAL DE 0 ES 1
+        cout<<"THE FACTORIAL IS 1";
     }
-    cout<<"THE FACTORIAL IS "<<result;
+    else {
+        //REPETIREMOS N-1 VECES
+        while(num1-aux>1){
+            while(aux2>1){
+                //MULTIPLICAMOS N*(N-1)
+                result+=keep_num;
+                aux2--;
+            }
+            //GUARDAMOS EL RESULTADO PARA HACER (N-1)(N-2) POSTERIORMENTE
+            keep_num=result;
+            //AUMENTAMOS AUX PARA REDUCIR EL NUMERO VECES A REPETIR
+            aux++;
+            //aux2 debe ser el numero de veces a repetir menos 1
+            aux2=num1-1-aux;
+        }
+        cout<<"THE FACTORIAL IS "<<result;
+    }
     return 0;
 }
