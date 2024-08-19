@@ -17,9 +17,10 @@ int main(){
     aux=number;
     while (number>0){
         unit=number%2;
-        binary+=unit*cont;
-        cont*=10;
-        number/=2;
+        //sacamos el modulo con 2, 1 o 0
+        binary+=unit*cont; //se suma usando potencias (1,10,100...)
+        cont*=10;//aumentamos la potencia para recorrer de dígito
+        number/=2;//se divide entre 2 el número
     }
     cout<<"THE NUMBER "<<aux<<" IS IN BINARY: "<<binary<<endl;
     return 0;
