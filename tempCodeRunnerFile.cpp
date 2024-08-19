@@ -1,1 +1,1 @@
-10^cont
+while(aux2>1)
