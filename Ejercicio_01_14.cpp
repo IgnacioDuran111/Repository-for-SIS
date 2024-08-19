@@ -9,18 +9,20 @@ Problema planteado: Crea un programa para obtener el factorial de un número ent
 using namespace std;
 int main(){
     system("cls");
-    int num1,aux,aux2,result=0;
+    int num1,keep_num,aux=1,aux2=0,result=0;
     cout<<"THIS PROGRAM CALCULATE THE FACTORIAL OF A NUMBER"<<endl;
     cout<<"PLEASE INTRODUCE A NUMBER"<<endl;
     cin>>num1;
-    aux=num1-1;
-    while(aux>0){
-        aux2=num1-2;
-        while(aux2>0){
-            result+=num1;
+    aux2=num1;
+    keep_num=num1;
+    while(num1-aux>1){
+        while(aux2-1>0){
+            result+=keep_num;
             aux2--;
         }
-        aux--;
+        keep_num=result;
+        aux++;
+        aux2=num1-aux;
     }
     cout<<"THE FACTORIAL IS "<<result;
     return 0;
